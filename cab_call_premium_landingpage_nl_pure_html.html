@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CabCall Eindhoven – Taxi • Wit & Blauw Design</title>
+  <meta name="description" content="CabCall – betrouwbaar taxi- en luchthavenvervoer in Eindhoven en regio. Eerlijke tarieven, vriendelijke chauffeurs. Bel 040–842 48 58 of reserveer online." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#0089CF',
+          },
+          boxShadow: {
+            brand: '0 8px 24px rgba(0,137,207,.28)',
+            brandLg: '0 14px 32px rgba(0,137,207,.35)'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html{scroll-behavior:smooth}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji","Segoe UI Emoji"}
+    .glass{backdrop-filter:saturate(180%) blur(12px)}
+  </style>
+  <!-- Lucide icons (auto replace) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-[100dvh] bg-white text-neutral-900">
+  <main id="top">
+    <!-- Header -->
+    <header class="sticky top-0 z-40 w-full border-b border-neutral-200/80 bg-white/80 glass">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <a href="#top" class="group inline-flex items-center gap-3">
+          <span class="grid h-9 w-9 place-items-center rounded-xl text-white shadow ring-1 ring-inset" style="background:#0089CF; box-shadow:0 6px 16px rgba(0,137,207,.25)">
+            <i data-lucide="car" class="h-5 w-5"></i>
+          </span>
+          <span class="text-lg font-semibold tracking-tight">CabCall <span class="hidden sm:inline">Eindhoven</span></span>
+        </a>
+
+        <nav class="hidden items-center gap-7 text-sm text-neutral-600 md:flex">
+          <a href="#usp" class="hover:text-neutral-900">Waarom CabCall</a>
+          <a href="#tarieven" class="hover:text-neutral-900">Tarieven</a>
+          <a href="#gebied" class="hover:text-neutral-900">Werkgebied</a>
+          <a href="#werkwijze" class="hover:text-neutral-900">Werkwijze</a>
+          <a href="#faq" class="hover:text-neutral-900">FAQ</a>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-brand px-4 py-2 font-medium text-white shadow-md hover:opacity-90"><i data-lucide="phone" class="h-4 w-4"></i> Bel of reserveer</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden text-neutral-700" aria-label="Open navigatie">
+          <i data-lucide="menu" class="h-6 w-6"></i>
+        </button>
+      </div>
+      <div id="mobileNav" class="hidden border-t border-neutral-200 md:hidden">
+        <div class="mx-auto max-w-7xl space-y-1 px-4 py-3 sm:px-6 lg:px-8">
+          <a href="#usp" class="block rounded-lg px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Waarom CabCall</a>
+          <a href="#tarieven" class="block rounded-lg px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Tarieven</a>
+          <a href="#gebied" class="block rounded-lg px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Werkgebied</a>
+          <a href="#werkwijze" class="block rounded-lg px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50">Werkwijze</a>
+          <a href="#faq" class="block rounded-lg px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50">FAQ</a>
+          <a href="#contact" class="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand px-4 py-2 font-medium text-white" style="box-shadow:0 6px 16px rgba(0,137,207,.25)"><i data-lucide="phone" class="h-4 w-4"></i> Bel of reserveer</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,rgba(0,137,207,.12),rgba(255,255,255,0)_60%)]"></div>
+      <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-4 pb-16 pt-10 sm:px-6 lg:grid-cols-2 lg:px-8 lg:pb-24 lg:pt-16">
+        <div>
+          <h1 class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Taxi in Eindhoven & regio –<br class="hidden sm:block" /><span class="text-brand"> snel, eerlijk en comfortabel</span></h1>
+          <p class="mt-5 max-w-xl text-pretty text-neutral-600">CabCall is uw partner in mobiliteit. Kies voor een zorgeloze rit met duidelijke tarieven en vriendelijke chauffeurs. Bel direct of plan uw rit eenvoudig online.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="tel:0408424858" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-brand px-5 py-3 text-base font-semibold text-white shadow-brand hover:opacity-95"><i data-lucide="phone" class="h-5 w-5"></i> 040 – 842 48 58</a>
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-2xl border border-neutral-300 px-5 py-3 text-base font-semibold text-neutral-900 hover:bg-neutral-50">Online reserveren <i data-lucide="arrow-right" class="h-5 w-5"></i></a>
+          </div>
+          <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 text-xs text-neutral-500">
+            <div class="inline-flex items-center gap-2"><i data-lucide="clock" class="h-4 w-4"></i> ma–vr 07:00–20:00, daarbuiten op aanvraag</div>
+            <div class="inline-flex items-center gap-2"><i data-lucide="shield-check" class="h-4 w-4"></i> 25+ jaar ervaring</div>
+          </div>
+        </div>
+        <!-- Booking Card -->
+        <div class="rounded-3xl border border-neutral-200 bg-white p-5 shadow-xl">
+          <div class="mb-4 flex items-center gap-2"><span class="rounded-xl bg-neutral-100 px-3 py-1 text-xs text-neutral-600">Snelle prijsaanvraag</span></div>
+          <form id="requestForm" class="grid grid-cols-1 gap-3">
+            <label class="grid gap-1">
+              <span class="text-sm text-neutral-700">Naam</span>
+              <input required type="text" placeholder="Uw naam" class="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+            </label>
+            <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <label class="grid gap-1">
+                <span class="text-sm text-neutral-700">E‑mail</span>
+                <input required type="email" placeholder="u@bedrijf.nl" class="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+              </label>
+              <label class="grid gap-1">
+                <span class="text-sm text-neutral-700">Telefoon</span>
+                <input required type="tel" placeholder="040 842 4858" class="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+              </label>
+            </div>
+            <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <label class="grid gap-1">
+                <span class="text-sm text-neutral-700">Ophaaldatum</span>
+                <input required type="date" class="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+              </label>
+              <label class="grid gap-1">
+                <span class="text-sm text-neutral-700">Tijd</span>
+                <input required type="time" class="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+              </label>
+            </div>
+            <label class="grid gap-1">
+              <span class="text-sm text-neutral-700">Ophaaladres</span>
+              <div class="relative">
+                <i data-lucide="map-pin" class="pointer-events-none absolute left-3 top-2.5 h-4 w-4 text-neutral-400"></i>
+                <input required type="text" placeholder="Bijv. Stationsplein 1, Eindhoven" class="w-full rounded-xl border border-neutral-300 bg-white px-9 py-2 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+              </div>
+            </label>
+            <label class="grid gap-1">
+              <span class="text-sm text-neutral-700">Bestemming</span>
+              <div class="relative">
+                <i data-lucide="map-pin" class="pointer-events-none absolute left-3 top-2.5 h-4 w-4 text-neutral-400"></i>
+                <input required type="text" placeholder="Bijv. Schiphol, Amsterdam" class="w-full rounded-xl border border-neutral-300 bg-white px-9 py-2 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+              </div>
+            </label>
+            <label class="grid gap-1">
+              <span class="text-sm text-neutral-700">Opmerkingen (optioneel)</span>
+              <textarea rows="3" placeholder="Bijv. kinderzitje, extra koffers, voorkeur ophaallocatie…" class="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]"></textarea>
+            </label>
+            <button type="submit" class="group mt-1 inline-flex items-center justify-center gap-2 rounded-2xl bg-brand px-5 py-3 font-semibold text-white shadow-brand">Prijsaanvraag versturen <i data-lucide="arrow-right" class="h-5 w-5"></i></button>
+            <p id="formMsg" class="hidden text-sm text-brand">Bedankt! We nemen zo snel mogelijk contact met u op om te bevestigen.</p>
+          </form>
+          <p class="mt-3 text-xs text-neutral-500">Voor directe ritten: altijd bellen voor de snelste bevestiging.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- USP -->
+    <section id="usp" class="border-y border-neutral-200 bg-white">
+      <div class="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
+        <article class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+          <div class="mb-3 inline-flex items-center justify-center rounded-xl bg-[#E6F4FB] p-2 text-brand"><i data-lucide="shield-check" class="h-6 w-6"></i></div>
+          <h3 class="text-lg font-semibold">Betrouwbaar familiebedrijf</h3>
+          <p class="mt-2 text-sm text-neutral-600">Meer dan 25 jaar ervaring in personenvervoer. Persoonlijk, veilig en netjes.</p>
+        </article>
+        <article class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+          <div class="mb-3 inline-flex items-center justify-center rounded-xl bg-[#E6F4FB] p-2 text-brand"><i data-lucide="badge-check" class="h-6 w-6"></i></div>
+          <h3 class="text-lg font-semibold">Eerlijke, transparante prijzen</h3>
+          <p class="mt-2 text-sm text-neutral-600">Heldere tarieven en vooraf prijsvoorbeelden voor populaire luchthavens.</p>
+        </article>
+        <article class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+          <div class="mb-3 inline-flex items-center justify-center rounded-xl bg-[#E6F4FB] p-2 text-brand"><i data-lucide="clock" class="h-6 w-6"></i></div>
+          <h3 class="text-lg font-semibold">Op tijd = standaard</h3>
+          <p class="mt-2 text-sm text-neutral-600">We plannen slim en houden rekening met spits en omleidingen.</p>
+        </article>
+        <article class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+          <div class="mb-3 inline-flex items-center justify-center rounded-xl bg-[#E6F4FB] p-2 text-brand"><i data-lucide="car" class="h-6 w-6"></i></div>
+          <h3 class="text-lg font-semibold">Comfortabele sedans (t/m 4 p.)</h3>
+          <p class="mt-2 text-sm text-neutral-600">Schoon en verzorgd vervoer voor particulieren en zakelijk.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tarieven -->
+    <section id="tarieven" class="bg-slate-50">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Tarieven & prijsvoorbeelden</h2>
+          <p class="mt-3 text-neutral-600">Transparant en duidelijk. Voor ritten binnen 30 km gelden de onderstaande basistarieven. Voor langere afstanden bieden we scherpe vaste prijzen op aanvraag.</p>
+        </div>
+        <div class="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <div class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+            <h3 class="text-xl font-semibold">Basistarieven (tot 30 km)</h3>
+            <ul class="mt-4 space-y-2 text-sm text-neutral-700">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-brand"></i> Starttarief <strong class="ml-1">€ 4,02</strong></li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-brand"></i> Kilometertarief <strong class="ml-1">€ 2,96 / km</strong></li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-brand"></i> Minuuttarief <strong class="ml-1">€ 0,49 / min</strong></li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-brand"></i> Wachttarief <strong class="ml-1">€ 55,35 / uur</strong></li>
+            </ul>
+            <p class="mt-3 text-xs text-neutral-500">* Officiële ritprijs afhankelijk van afstand, tijd en route. Vraag een vaste prijs aan bij reservering.</p>
+          </div>
+          <div class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+            <h3 class="flex items-center gap-2 text-xl font-semibold"><i data-lucide="plane" class="h-5 w-5 text-brand"></i> Luchthavenvoorbeelden (1–4 p.)</h3>
+            <ul class="mt-4 space-y-2 text-sm text-neutral-700">
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-brand"></i> Eindhoven → Amsterdam Schiphol <strong class="ml-1">v.a. € 200</strong></li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-brand"></i> Eindhoven → Brussel (Zaventem) <strong class="ml-1">v.a. € 230</strong></li>
+              <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="h-4 w-4 text-brand"></i> Eindhoven → Düsseldorf Airport <strong class="ml-1">v.a. € 200</strong></li>
+            </ul>
+            <p class="mt-3 text-xs text-neutral-500">* Richtprijzen. Definitieve vaste prijs ontvangt u bij bevestiging.</p>
+          </div>
+          <div class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+            <h3 class="text-xl font-semibold">Zakelijk & privé</h3>
+            <p class="mt-3 text-sm text-neutral-700">Dagelijks vervoer binnen de regio of een internationaal vliegveld? Wij denken mee over planning en tijdspad, zodat u ontspannen aankomt. Factuur per e‑mail na afloop is mogelijk.</p>
+            <a href="#contact" class="mt-4 inline-flex items-center gap-2 font-medium text-brand">Vraag een vaste prijs aan <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Werkgebied -->
+    <section id="gebied" class="border-y border-neutral-200 bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Werkgebied regio Eindhoven</h2>
+          <p class="mt-3 text-neutral-600">We rijden o.a. in: Eindhoven, Veldhoven, Waalre, Valkenswaard, Geldrop, Nuenen, Son & Breugel en Best. Lange afstand of rit buiten de regio? Neem gerust contact op.</p>
+        </div>
+        <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div class="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-center text-sm text-neutral-800 shadow-sm">Eindhoven</div>
+          <div class="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-center text-sm text-neutral-800 shadow-sm">Veldhoven</div>
+          <div class="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-center text-sm text-neutral-800 shadow-sm">Waalre</div>
+          <div class="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-center text-sm text-neutral-800 shadow-sm">Valkenswaard</div>
+          <div class="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-center text-sm text-neutral-800 shadow-sm">Geldrop</div>
+          <div class="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-center text-sm text-neutral-800 shadow-sm">Nuenen</div>
+          <div class="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-center text-sm text-neutral-800 shadow-sm">Son & Breugel</div>
+          <div class="rounded-2xl border border-neutral-200 bg-white px-4 py-3 text-center text-sm text-neutral-800 shadow-sm">Best</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Werkwijze -->
+    <section id="werkwijze" class="bg-slate-50">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Zo werkt het</h2>
+          <p class="mt-3 text-neutral-600">Onze werkwijze is helder en zonder verrassingen. Dit mag u van ons verwachten.</p>
+        </div>
+        <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+            <div class="mb-3 inline-flex items-center justify-center rounded-xl bg-[#E6F4FB] p-2 text-brand"><i data-lucide="phone" class="h-5 w-5"></i></div>
+            <h3 class="text-lg font-semibold">Bel of boek online</h3>
+            <p class="mt-2 text-sm text-neutral-600">Voor direct vervoer: bellen. Voor later: online reserveren met uw gegevens en bestemming.</p>
+          </div>
+          <div class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+            <div class="mb-3 inline-flex items-center justify-center rounded-xl bg-[#E6F4FB] p-2 text-brand"><i data-lucide="badge-check" class="h-5 w-5"></i></div>
+            <h3 class="text-lg font-semibold">Snelle bevestiging</h3>
+            <p class="mt-2 text-sm text-neutral-600">We nemen contact op om tijd en prijs (desgewenst vast) te bevestigen.</p>
+          </div>
+          <div class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+            <div class="mb-3 inline-flex items-center justify-center rounded-xl bg-[#E6F4FB] p-2 text-brand"><i data-lucide="map-pin" class="h-5 w-5"></i></div>
+            <h3 class="text-lg font-semibold">We halen u op</h3>
+            <p class="mt-2 text-sm text-neutral-600">U ontvangt een duidelijke ophaallocatie. Chauffeur helpt met bagage.</p>
+          </div>
+          <div class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+            <div class="mb-3 inline-flex items-center justify-center rounded-xl bg-[#E6F4FB] p-2 text-brand"><i data-lucide="car" class="h-5 w-5"></i></div>
+            <h3 class="text-lg font-semibold">Comfortabele rit</h3>
+            <p class="mt-2 text-sm text-neutral-600">Rustig op weg met ervaren chauffeur. Na afloop ontvangt u indien gewenst een factuur per e‑mail.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review -->
+    <section class="border-y border-neutral-200 bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div class="grid items-center gap-10 md:grid-cols-2">
+          <div>
+            <h3 class="text-2xl font-semibold">Waar klanten ons om waarderen</h3>
+            <ul class="mt-4 space-y-3 text-neutral-700">
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="mt-0.5 h-5 w-5 text-brand"></i> Vriendelijke, hulpvaardige chauffeurs</li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="mt-0.5 h-5 w-5 text-brand"></i> Zorgvuldige planning en op tijd ophalen</li>
+              <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="mt-0.5 h-5 w-5 text-brand"></i> Netjes en comfortabel rijden</li>
+            </ul>
+          </div>
+          <figure class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+            <div class="flex items-center gap-2 text-brand"><i data-lucide="quote" class="h-5 w-5"></i><span class="text-sm">Klantenervaring</span></div>
+            <blockquote class="mt-2 text-neutral-800">“Super service. Ruim op tijd aanwezig en heerlijk ontspannen rit naar Schiphol. Aanrader voor iedereen in regio Eindhoven.”</blockquote>
+            <figcaption class="mt-3 text-sm text-neutral-500">— Review naar voorbeeld van tevreden klanten (indicatief)</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-slate-50">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Veelgestelde vragen</h2>
+          <p class="mt-3 text-neutral-600">Staat uw vraag er niet bij? Neem gerust contact met ons op.</p>
+        </div>
+        <div class="mx-auto mt-10 max-w-3xl divide-y divide-neutral-200 rounded-3xl border border-neutral-200 bg-white shadow-sm">
+          <details class="group p-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-medium">Wat zijn jullie openingstijden?<span class="text-brand group-open:rotate-90"><i data-lucide="arrow-right" class="h-5 w-5"></i></span></summary>
+            <p class="mt-3 text-sm leading-relaxed text-neutral-700">Wij zijn van maandag t/m vrijdag bereikbaar van 07:00 – 20:00 uur. Buiten deze tijden hanteren wij variabele openingstijden en rijden wij op aanvraag/afspraak.</p>
+          </details>
+          <details class="group p-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-medium">Rijden jullie buiten Eindhoven?<span class="text-brand group-open:rotate-90"><i data-lucide="arrow-right" class="h-5 w-5"></i></span></summary>
+            <p class="mt-3 text-sm leading-relaxed text-neutral-700">Ja. Ons vaste werkgebied is Eindhoven, Veldhoven, Waalre, Valkenswaard, Geldrop, Nuenen, Son & Breugel en Best. Rit buiten de regio of naar luchthavens? Geen probleem – prijs op aanvraag.</p>
+          </details>
+          <details class="group p-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-medium">Wat kost een rit naar Schiphol?<span class="text-brand group-open:rotate-90"><i data-lucide="arrow-right" class="h-5 w-5"></i></span></summary>
+            <p class="mt-3 text-sm leading-relaxed text-neutral-700">Als richtprijs: Eindhoven → Schiphol vanaf € 200 voor 1 t/m 4 personen. Exacte prijs op aanvraag en afhankelijk van ophaaladres, datum/tijd en eventuele wachttijd.</p>
+          </details>
+          <details class="group p-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-medium">Hoe snel kan ik een taxi krijgen?<span class="text-brand group-open:rotate-90"><i data-lucide="arrow-right" class="h-5 w-5"></i></span></summary>
+            <p class="mt-3 text-sm leading-relaxed text-neutral-700">Bel ons voor de snelste beschikbaarheid. Voor direct vervoer adviseren wij bellen. Voor later plannen kan het online reserveringsformulier worden gebruikt.</p>
+          </details>
+          <details class="group p-6">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left text-base font-medium">Welke voertuigen zetten jullie in?<span class="text-brand group-open:rotate-90"><i data-lucide="arrow-right" class="h-5 w-5"></i></span></summary>
+            <p class="mt-3 text-sm leading-relaxed text-neutral-700">Standaard personenauto’s tot maximaal 4 passagiers. Voor specifieke wensen kunt u dit aangeven in het opmerkingenveld bij uw reservering.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="border-t border-neutral-200 bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2">
+          <div>
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Contact & reserveren</h2>
+            <p class="mt-4 text-neutral-600">Voor de snelste bevestiging van een rit adviseren wij bellen. Wilt u vooruit plannen of een vaste prijs ontvangen? Vul dan het formulier in.</p>
+            <div class="mt-6 space-y-3 text-neutral-800">
+              <a href="tel:0408424858" class="flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-xl bg-brand text-white"><i data-lucide="phone" class="h-5 w-5"></i></span><span class="text-lg font-semibold">040 – 842 48 58</span></a>
+              <a href="mailto:info@cabcall.nl" class="flex items-center gap-3 text-brand hover:underline">info@cabcall.nl</a>
+              <p class="flex items-center gap-2 text-sm text-neutral-500"><i data-lucide="clock" class="h-4 w-4"></i> ma–vr 07:00–20:00 · daarbuiten op aanvraag/afspraak</p>
+            </div>
+            <div class="mt-8 rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+              <h3 class="flex items-center gap-2 text-lg font-semibold"><i data-lucide="plane" class="h-5 w-5 text-brand"></i> Vaste prijs naar de luchthaven?</h3>
+              <p class="mt-2 text-sm text-neutral-600">Geef uw vluchtgegevens en gewenste ophaaltijd door; we sturen u een scherpe, vaste prijs terug.</p>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
+            <h3 class="text-lg font-semibold">Reserveringsformulier</h3>
+            <!-- Reuse Hero form via anchor link for a single source of truth -->
+            <form onsubmit="event.preventDefault(); document.getElementById('formMsg').classList.remove('hidden'); this.reset();" class="grid grid-cols-1 gap-3">
+              <label class="grid gap-1">
+                <span class="text-sm text-neutral-700">Naam</span>
+                <input required type="text" placeholder="Uw naam" class="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+              </label>
+              <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <label class="grid gap-1">
+                  <span class="text-sm text-neutral-700">E‑mail</span>
+                  <input required type="email" placeholder="u@bedrijf.nl" class="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+                </label>
+                <label class="grid gap-1">
+                  <span class="text-sm text-neutral-700">Telefoon</span>
+                  <input required type="tel" placeholder="040 842 4858" class="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+                </label>
+              </div>
+              <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <label class="grid gap-1">
+                  <span class="text-sm text-neutral-700">Ophaaldatum</span>
+                  <input required type="date" class="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+                </label>
+                <label class="grid gap-1">
+                  <span class="text-sm text-neutral-700">Tijd</span>
+                  <input required type="time" class="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 focus:outline:none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+                </label>
+              </div>
+              <label class="grid gap-1">
+                <span class="text-sm text-neutral-700">Ophaaladres</span>
+                <div class="relative">
+                  <i data-lucide="map-pin" class="pointer-events-none absolute left-3 top-2.5 h-4 w-4 text-neutral-400"></i>
+                  <input required type="text" placeholder="Bijv. Stationsplein 1, Eindhoven" class="w-full rounded-xl border border-neutral-300 bg-white px-9 py-2 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+                </div>
+              </label>
+              <label class="grid gap-1">
+                <span class="text-sm text-neutral-700">Bestemming</span>
+                <div class="relative">
+                  <i data-lucide="map-pin" class="pointer-events-none absolute left-3 top-2.5 h-4 w-4 text-neutral-400"></i>
+                  <input required type="text" placeholder="Bijv. Schiphol, Amsterdam" class="w-full rounded-xl border border-neutral-300 bg-white px-9 py-2 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]" />
+                </div>
+              </label>
+              <label class="grid gap-1">
+                <span class="text-sm text-neutral-700">Opmerkingen (optioneel)</span>
+                <textarea rows="3" placeholder="Bijv. kinderzitje, extra koffers, voorkeur ophaallocatie…" class="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-[rgba(0,137,207,.25)]"></textarea>
+              </label>
+              <button type="submit" class="group mt-1 inline-flex items-center justify-center gap-2 rounded-2xl bg-brand px-5 py-3 font-semibold text-white shadow-brand">Reservering versturen <i data-lucide="arrow-right" class="h-5 w-5"></i></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="mt-14 grid items-center gap-6 rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm md:grid-cols-2">
+          <div>
+            <h4 class="text-base font-semibold">Over CabCall</h4>
+            <p class="mt-2 text-sm text-neutral-600">CabCall is een lokaal familiebedrijf met meer dan 25 jaar ervaring. We bieden particulier en zakelijk vervoer in Eindhoven en omliggende gemeenten, met duidelijke afspraken en nette chauffeurs.</p>
+          </div>
+          <ul class="grid grid-cols-2 gap-3 text-sm text-neutral-700 sm:grid-cols-4">
+            <li class="rounded-xl border border-neutral-200 bg-white px-3 py-2 shadow-sm">Particulier vervoer</li>
+            <li class="rounded-xl border border-neutral-200 bg-white px-3 py-2 shadow-sm">Zakelijk vervoer</li>
+            <li class="rounded-xl border border-neutral-200 bg-white px-3 py-2 shadow-sm">Luchthavenvervoer</li>
+            <li class="rounded-xl border border-neutral-200 bg-white px-3 py-2 shadow-sm">Regionaal & lange afstand</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-200 bg-slate-50">
+      <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-center">
+          <div class="flex items-center gap-3">
+            <span class="grid h-9 w-9 place-items-center rounded-xl bg-brand text-white"><i data-lucide="car" class="h-5 w-5"></i></span>
+            <div>
+              <p class="text-sm font-semibold">CabCall Eindhoven</p>
+              <p class="text-xs text-neutral-500">© <span id="year"></span> CabCall – Alle rechten voorbehouden</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-6 text-sm text-neutral-600">
+            <a href="#tarieven" class="hover:text-neutral-900">Tarieven</a>
+            <a href="#faq" class="hover:text-neutral-900">FAQ</a>
+            <a href="#contact" class="hover:text-neutral-900">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="fixed inset-x-0 bottom-4 z-40 mx-auto w-full max-w-xl px-4 md:hidden">
+        <div class="rounded-2xl bg-brand p-2 shadow-brandLg">
+          <a href="tel:0408424858" class="flex items-center justify-center gap-3 text-base font-semibold text-white"><i data-lucide="phone" class="h-5 w-5"></i> Bel direct 040 – 842 48 58</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- SEO JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TaxiService",
+    "name":"CabCall Eindhoven",
+    "areaServed":["Eindhoven","Veldhoven","Waalre","Valkenswaard","Geldrop","Nuenen","Son en Breugel","Best"],
+    "telephone":"+31408424858",
+    "email":"info@cabcall.nl",
+    "url":"https://www.cabcall.nl/",
+    "priceRange":"€€",
+    "openingHours":["Mo-Fr 07:00-20:00"],
+    "makesOffer":[{"@type":"Offer","name":"Rit binnen 30 km","priceCurrency":"EUR"},{"@type":"Offer","name":"Airport transfer (Schiphol/Zaventem/Düsseldorf)","priceCurrency":"EUR"}]
+  }
+  </script>
+
+  <script>
+    // init lucide icons
+    lucide.createIcons();
+
+    // year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+      menuBtn.innerHTML = mobileNav.classList.contains('hidden') ? '<i data-lucide="menu" class="h-6 w-6"></i>' : '<i data-lucide="x" class="h-6 w-6"></i>';
+      lucide.createIcons();
+    });
+
+    // booking form feedback
+    const form = document.getElementById('requestForm');
+    const msg = document.getElementById('formMsg');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      msg.classList.remove('hidden');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
